@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
 // const mongoUrl = 'mongodb://localhost:27017/OnlineLec'
-const mongoUrl = process.env.DB_Connection
+const mongoUrl = 'mongodb+srv:///kareliyaharshil2111:Hk123456@test.mpuih2h.mongodb.net/'
 
 mongoose.connect(mongoUrl, {
     useNewUrlParser : true,
@@ -18,7 +18,7 @@ db.on('disconnected',()=>{
     console.log('Disonnected to MongoDb server')
 })
 
-db.on('erroe',(err)=>{
+db.on('error',(err)=>{
     console.log('Error to MongoDb server ' + err)
 })
 

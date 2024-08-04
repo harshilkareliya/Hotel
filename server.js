@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3000
 app.get('/', (req, res) => {
     res.end('You are in home page')
 })
+app.get('/try', (req, res) => {
+    res.end('You are in try page')
+})
 
 const personRoutes = require('./routes/personRoutes')
 const menuRoutes = require('./routes/menuRoutes')
