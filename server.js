@@ -7,10 +7,12 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000
 app.get('/', (req, res) => {
     res.end('You are in home page')
+    console.log('You are in Home page')
 })
 
 app.get('/try', (req, res) => {
     res.end('You are in try page')
+    console.log('You are in try page')
 })
 
 const personRoutes = require('./routes/personRoutes')
