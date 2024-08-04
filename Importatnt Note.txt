@@ -1,0 +1,28 @@
+Commands(Terminal)
+
+pwd :- Present Working Derectory (give path of the wroking directory)
+nodemon :- continue server start 
+
+** mongoDB Server **
+mongosh :- start mongoDB server
+show dbs :- show databases
+show collection :- show collection
+use :- use database 
+db.createCollection("collectionName") :- for create collection/Table 
+db.collectionName.insertOne({data}) :- data Insert
+db.collectionName.find() :- show data in collection/Table
+db.collectionName.find({age : { $gt : 21}}); :- gt menas greater than
+db.collectionName.find({age : { $lt : 21}}); :- gt menas less than
+db.collectionName.updateOne({match paramter},{$set : {change data}});  :- like (db.users.updateOne({username : 'Alice'},{$set : {id : 0}});)
+db.collectionName.deleteOne({match paramter}) :- Like  (db.users.deleteOne({id : 0}))
+
+
+
+
+Dependencies
+
+npm i -g nodemon 
+
+npm i loadash
+(data manupluating, many built in function)
+
